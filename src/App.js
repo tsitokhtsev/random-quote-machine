@@ -18,13 +18,17 @@ const App = () => {
 	}, [])
 
 	if (!quote) {
-		return <div className="spinner-border"></div>
+		return (
+			<div id="quote-box" className="d-flex justify-content-center align-items-center">
+				<div className="spinner-border"></div>
+			</div>
+		)
 	}
 
 	const twitterUrl = `http://twitter.com/intent/tweet?text=${quote.content} - ${quote.author}`
 
 	return (
-		<div id="quote-box" className="hero-body">
+		<div id="quote-box">
 			<h1>Random Quote Machine</h1>
 			<p id="text">{quote.content}</p>
 			<div id="bottom">
