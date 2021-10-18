@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	color: black;
+}
+
+::selection {
+	background-color: black;
+	color: #d9d9d9;
+}
+
+#quote-box {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 4em;
+	min-height: 100vh;
+	background-color: #d9d9d9;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+#text {
+	margin: 0.5em 0;
+	font-size: 4em;
+}
+
+#bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#author {
+	margin: 0;
+	font-size: 2em;
+}
+
+#tweet-quote {
+	padding: 0.5em;
+	font-size: 1.5em;
+	text-decoration: none;
+	border: 2px black solid;
+	color: #d9d9d9;
+	background-color: black;
+}
+
+#new-quote {
+	margin-left: 15px;
+	padding: 0.5em;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+	text-transform: capitalize;
+	border: 2px black solid;
+	background-color: #d9d9d9;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#new-quote:hover {
+	color: #d9d9d9;
+	background-color: black;
+}
