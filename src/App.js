@@ -19,7 +19,7 @@ const App = () => {
 
 	if (!quote) {
 		return (
-			<div id="quote-box" className="d-flex justify-content-center align-items-center">
+			<div className="d-flex justify-content-center align-items-center" id="quote-box">
 				<div className="spinner-border"></div>
 			</div>
 		)
@@ -35,8 +35,8 @@ const App = () => {
 				<p id="author">{quote.author}</p>
 				<div className="buttons">
 					<a
-						href={twitterUrl}
 						id="tweet-quote"
+						href={twitterUrl}
 					>
 						<i className="fab fa-twitter"></i>
 					</a>
