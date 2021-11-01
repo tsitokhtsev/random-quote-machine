@@ -54,7 +54,7 @@ h1 {
 #new-quote {
 	padding: 0.5em;
 	margin-left: 15px;
-	font: 1.5em, 'Playfair Display', serif;
+	font-size: 1.5em;
 	text-transform: capitalize;
 	cursor: pointer;
 	background-color: #d9d9d9;
